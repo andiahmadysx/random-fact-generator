@@ -1,4 +1,4 @@
-const factsObject = {
+const data = {
     factcount: "1000",
     facts: [
       "$30 of raw popcorn translates into $3,000 in sales at movie theaters",
@@ -1008,5 +1008,5 @@ const factRef = document.querySelector('.fact');
 const generateButton = document.getElementById('generate');
 
 generateButton.addEventListener('click', () => {
-    factRef.textContent = factsObject.facts[Math.floor(Math.random() * factsObject.facts.length)]
+    factRef.textContent = data.facts[Math.floor(Math.random() * data.facts.length)]
 })
